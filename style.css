@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1e1c6;
+    color: #3f8b8a;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #00b5b8;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #3f8b8a;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #00b5b8;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3f8b8a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.page {
+    display: block;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 8px 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header, footer {
+        padding: 20px 15px;
+    }
+}
